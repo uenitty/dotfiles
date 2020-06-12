@@ -6,7 +6,7 @@ brew "pandoc"
 brew "tmux"
 brew "tree"
 brew "wget"
-brew "yarn", args: ["ignore-dependencies"]
+brew "yarn"
 brew "zsh"
 brew "zsh-completions"
 cask "appcleaner"
