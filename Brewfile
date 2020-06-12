@@ -1,5 +1,6 @@
 brew "anyenv"
 brew "git"
+brew "go"
 brew "jq"
 brew "maven"
 brew "pandoc"
