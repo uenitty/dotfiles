@@ -1,0 +1,32 @@
+brew "anyenv"
+brew "git"
+brew "jq"
+brew "maven"
+brew "pandoc"
+brew "tmux"
+brew "tree"
+brew "wget"
+brew "yarn", args: ["ignore-dependencies"]
+brew "zsh"
+brew "zsh-completions"
+cask "appcleaner"
+cask "discord"
+cask "docker"
+cask "dropbox"
+cask "figma"
+cask "google-backup-and-sync"
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "intellij-idea"
+cask "iterm2"
+cask "java"
+cask "karabiner-elements"
+cask "notion"
+cask "spotify"
+cask "teamviewer"
+cask "visual-studio-code"
+cask "vlc"
+mas "iHosts", id: 1102004240
+mas "LINE", id: 539883307
+mas "Slack", id: 803453959
+mas "Twitter", id: 1482454543
