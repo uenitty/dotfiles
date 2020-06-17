@@ -19,12 +19,13 @@
 #if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 ## anyenv初期化
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init - zsh)"
-
-if type thefuck >/dev/null 2>&1; then
-    eval $(thefuck --alias)
+if type anyenv >/dev/null 2>&1; then
+    eval "$(anyenv init - zsh)"
 fi
+
+#if type thefuck >/dev/null 2>&1; then
+#    eval $(thefuck --alias)
+#fi
 
 ## go用
 #export GOPATH=$HOME/Development/go
