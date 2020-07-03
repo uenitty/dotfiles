@@ -1,43 +1,13 @@
 ##############################
 # 環境変数
 
-## 言語、文字コードの設定
-#export LANG=ja_JP.UTF-8
-#case ${UID} in # http://news.mynavi.jp/column/zsh/024/
-#0)
-#    LANG=C
-#    ;;
-#esac
-
-## Homebrew用PATH
-#export PATH=/usr/local/bin:$PATH
-
-## rbenv初期化（補完有効化など）
-#if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-
-## pyenv初期化（補完有効化など）
-#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
 ## anyenv初期化
 if type anyenv >/dev/null 2>&1; then
     eval "$(anyenv init - zsh)"
 fi
 
-#if type thefuck >/dev/null 2>&1; then
-#    eval $(thefuck --alias)
-#fi
-
-## go用
-#export GOPATH=$HOME/Development/go
-#export PATH=$PATH:$GOPATH/bin
-
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-
-# 自作コマンド置き場
-#export PATH=$PATH:$HOME/Development/MyCommands
-
 
 
 ##############################
@@ -46,7 +16,6 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 ## （プロンプトの？）カラー表示を有効にする
 autoload -U colors
 colors
-
 
 
 ##############################
@@ -77,7 +46,6 @@ setopt nolistbeep # 補完リストを表示するときのビープ音を無効
 setopt combining_chars # 補完時に濁点・半濁点を<3099>、<309a>のようにさせない https://github.com/tasuten/dotfiles/blob/master/.zshrc
 
 
-
 ##############################
 # 履歴
 
@@ -96,7 +64,6 @@ setopt hist_verify # 履歴から補完したものを即実行せず、実行�
 setopt share_history # 履歴を共有する
 
 
-
 ##############################
 # ターミナルのタイトル
 
@@ -108,7 +75,6 @@ hook__echo_term_title() {
     ;;
     esac
 }
-
 
 
 ##############################
@@ -135,45 +101,11 @@ zstyle ':vcs_info:*' actionformats '[%a|%b]' # モノクロ
 hook__call_vcs_info() { vcs_info }
 GIT_BRANCH_PROMPT='${vcs_info_msg_0_}'
 
-### 1行モノクロver.
-#PROMPT="%m:%n%# " # 画面左端に出力されるプロンプト
-#PROMPT2="%_> " # forやwhile/複数行入力時などに表示されるプロンプト
-#RPROMPT="[%24<...<% %~]" # 画面右端に出力されるプロンプト
-#SPROMPT="correct: %R -> %r ? [n,y,a,e]: " # correctで訂正の候補を出すときに表示されるプロンプト
-
-### 1行カラーver.
-#PROMPT="%F{magenta}%m%f:%F{green}%n%f%# " # 画面左端に出力されるプロンプト
-#PROMPT2="%_> " # forやwhile/複数行入力時などに表示されるプロンプト
-#RPROMPT="[%F{yellow}%24<...<% %~%f]" # 画面右端に出力されるプロンプト
-#SPROMPT="correct: %F{magenta}%R%f -> %F{cyan}%r%f ? [n,y,a,e]: " # correctで訂正の候補を出すときに表示されるプロンプト
-
 ### 2行カラーver.
 PROMPT="%F{magenta}%m%f:%F{green}%n%f %F{blue}%~%f"$'\n'"%# " # 画面左端に出力されるプロンプト
 PROMPT2="%_> " # forやwhile/複数行入力時などに表示されるプロンプト
 RPROMPT=$GIT_BRANCH_PROMPT # 画面右端に出力されるプロンプト
 SPROMPT="correct: %F{magenta}%R%f -> %F{cyan}%r%f ? [n,y,a,e]: " # correctで訂正の候補を出すときに表示されるプロンプト http://loumo.jp/wp/archive/20120501135820/
-
-### 一応保存
-#TMP_MAIN_PROMPT_STRING="%m:%n%% "
-#TMP_DIR_PROMPT_STRING="[%d]"
-#TMP_LF=$'\n'
-#PROMPT="%5(~|$TMP_DIR_PROMPT_STRING$TMP_LF|)$TMP_MAIN_PROMPT_STRING" # 画面左端に出力されるプロンプト
-#PROMPT2="%_> " # forやwhile/複数行入力時などに表示されるプロンプト
-#RPROMPT="%5(~||$TMP_DIR_PROMPT_STRING)" # 画面右端に出力されるプロンプト
-#SPROMPT="correct: %R -> %r ? [n,y,a,e]: " # correctで訂正の候補を出すときに表示されるプロンプト
-#unset TMP_MAIN_PROMPT_STRING
-#unset TMP_DIR_PROMPT_STRING
-#unset TMP_LF
-
-
-
-##############################
-# オンラインヘルプ
-
-#unalias run-help
-#autoload run-help
-#HELPDIR=/usr/local/share/zsh/help
-
 
 
 ##############################
@@ -223,21 +155,10 @@ delds () {
     fi
 }
 
-#jd () {
-#    dirs -v
-#    printf "select number: "
-#    read newdir
-#    if [ -n "$newdir" ]; then
-#        cd +"$newdir"
-#    fi
-#}
-
-
 
 ##############################
 # 他の設定ファイルを読み込む
 
-#[ -f ~/Dropbox/Development/config/zshrc ] && source ~/Dropbox/Development/config/zshrc
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
