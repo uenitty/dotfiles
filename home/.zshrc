@@ -52,6 +52,8 @@ colors
 ##############################
 # 補完
 
+fpath=(~/.zsh/completion $fpath)
+
 ## brew zsh-completions用path
 if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
