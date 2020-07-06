@@ -1,13 +1,10 @@
 ##############################
-# 環境変数
+# 初期化
 
-## anyenv初期化
+## anyenv
 if type anyenv >/dev/null 2>&1; then
     eval "$(anyenv init - zsh)"
 fi
-
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 
 ##############################

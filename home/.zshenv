@@ -9,6 +9,9 @@ case ${UID} in # http://news.mynavi.jp/column/zsh/024/
     ;;
 esac
 
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 
 ##############################
 # 自動zcompile[http://blog.n-z.jp/blog/2013-12-10-auto-zshrc-recompile.html]
