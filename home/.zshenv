@@ -11,7 +11,7 @@ esac
 
 
 ##############################
-# 自動zcompile[ihttp://blog.n-z.jp/blog/2013-12-10-auto-zshrc-recompile.html]
+# 自動zcompile[http://blog.n-z.jp/blog/2013-12-10-auto-zshrc-recompile.html]
 if [ ! -f ~/.zshenv.zwc -o ~/.zshenv -nt ~/.zshenv.zwc ]; then
    zcompile ~/.zshenv
 fi
