@@ -9,14 +9,6 @@ case ${UID} in # http://news.mynavi.jp/column/zsh/024/
     ;;
 esac
 
-## Homebrew用PATH
-#export PATH=/usr/local/bin:$PATH
-
-## rbenv用PATHとrbenv初期化（補完有効化など）
-#export RBENV_ROOT=/usr/local/var/rbenv
-#if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-
-
 
 ##############################
 # 自動zcompile[ihttp://blog.n-z.jp/blog/2013-12-10-auto-zshrc-recompile.html]
