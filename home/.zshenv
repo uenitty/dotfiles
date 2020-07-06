@@ -3,7 +3,8 @@
 
 ## 言語、文字コードの設定
 export LANG=ja_JP.UTF-8
-case ${UID} in # http://news.mynavi.jp/column/zsh/024/
+# rootユーザはLANG=C http://news.mynavi.jp/column/zsh/024/
+case ${UID} in
 0)
     LANG=C
     ;;
