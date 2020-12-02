@@ -37,7 +37,7 @@ cask "switchhosts"
 cask "teamviewer"
 cask "visual-studio-code"
 cask "vlc"
-cask "zoomus"
+cask "zoom"
 mas "iHosts", id: 1102004240
 mas "LINE", id: 539883307
 mas "Slack", id: 803453959
