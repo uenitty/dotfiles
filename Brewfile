@@ -40,7 +40,6 @@ cask "teamviewer"
 cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
-mas "iHosts", id: 1102004240
 mas "LINE", id: 539883307
 mas "Slack", id: 803453959
 mas "Twitter", id: 1482454543
