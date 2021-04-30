@@ -13,5 +13,4 @@
 1. [Homebrew](https://github.com/Homebrew/brew)をインストール
 1. `./Brewfile` の中身を調整（ `#` でコメントアウト）
 1. `brew bundle` を実行（[Homebrew/homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)）
-1. iTermでDuplicate profileし、 `Ueni's Default` としてデフォルトに設定
-1. `./term_profiles` ディレクトリ配下のプリセットをiTermに設定
+1. iTermのProfilesで `./term_profiles` ディレクトリ配下のプリセットをimport
