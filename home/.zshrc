@@ -22,6 +22,7 @@ fpath=(~/.zsh/completion $fpath)
 
 ## brew zsh-completions用path
 if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:${FPATH}
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
 
