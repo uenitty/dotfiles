@@ -21,8 +21,8 @@ colors
 fpath=(~/.zsh/completion $fpath)
 
 ## brew zsh-completions用path
-if [ -e /usr/local/share/zsh-completions ]; then
-    fpath=(/usr/local/share/zsh-completions $fpath)
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
 
 ## 補完機能を有効にする
