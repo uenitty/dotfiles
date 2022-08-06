@@ -4,7 +4,7 @@
 
 1. App Storeにログイン
 1. Xcodeをインストール
-1. このリポジトリを `~/Development/` ディレクトリ配下にclone
+1. このリポジトリを `~/Development` ディレクトリ配下にclone
 1. `./home` ディレクトリ配下を `~` ディレクトリ配下にコピー（Finderで隠しファイルは `⌘+Shift+.` で表示）
     1. `setopt glob_dots`
     1. `cp -r ./home/* ~`
