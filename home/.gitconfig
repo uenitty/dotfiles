@@ -1,9 +1,0 @@
-[user]
-	name = uenitty
-	email = uenitty@gmail.com
-[core]
-	excludesfile = ~/.gitignore_global
-[includeIf "gitdir:~/**/com/"]
-  path = ~/.gitconfig_com
-[includeIf "gitdir:~/**/ghe/"]
-  path = ~/.gitconfig_ghe

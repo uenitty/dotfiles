@@ -1,0 +1,6 @@
+[user]
+	name = uenitty
+	email = uenitty@gmail.com
+
+[includeIf "gitdir:~/**/ghe/"]
+  path = ~/.config/git/config_ghe
