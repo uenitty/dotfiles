@@ -48,7 +48,7 @@ setopt combining_chars # 補完時に濁点・半濁点を<3099>、<309a>のよ�
 # 履歴
 
 ## 履歴の設定
-HISTFILE=$ZDOTDIR/.zsh_history
+HISTFILE=$XDG_STATE_HOME/zsh/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
