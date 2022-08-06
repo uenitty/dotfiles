@@ -9,10 +9,3 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-
-
-##############################
-# 自動zcompile[http://blog.n-z.jp/blog/2013-12-10-auto-zshrc-recompile.html]
-if [ ! -f $ZDOTDIR/.zshenv.zwc -o $ZDOTDIR/.zshenv -nt $ZDOTDIR/.zshenv.zwc ]; then
-   zcompile $ZDOTDIR/.zshenv
-fi
