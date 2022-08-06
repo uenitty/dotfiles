@@ -1,11 +1,14 @@
-##############################
-# 環境変数
-
-## 言語、文字コードの設定
+# 言語、文字コードの設定
 export LANG=ja_JP.UTF-8
 
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+# zsh
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 
 ##############################
