@@ -12,7 +12,11 @@
    # `./home` ディレクトリ配下を `~` ディレクトリ配下にコピー
    % rsync -av ./home/ ~
    ```
-1. 秘密鍵やトークンなどは別の方法でコピー
+1. ```sh
+   # 秘密鍵やトークンなどは別の方法でコピー
+   # 旧Macの「リモートログイン」を一時的に有効にしておく
+   % rsync -auvzE --progress 旧Macのユーザー名@旧MacのIPアドレス:'~/.ssh/id_*' ~/.ssh
+   ```
 1. ```sh
    # ssh接続に切り替え
    % git remote set-url origin git@github.com:uenitty/dotfiles.git
