@@ -1,5 +1,5 @@
 tap "homebrew/cask-versions"
-brew "anyenv"
+brew "asdf"
 brew "git"
 #brew "go"
 #brew "jq"
