@@ -1,10 +1,8 @@
 ##############################
 # 初期化
 
-## anyenv
-if type anyenv >/dev/null 2>&1; then
-    eval "$(anyenv init - zsh)"
-fi
+## asdf
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 
 ##############################
