@@ -1,11 +1,4 @@
 ##############################
-# 初期化
-
-## asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
-
-
-##############################
 # 色 http://qiita.com/mollifier/items/40d57e1da1b325903659
 
 ## （プロンプトの？）カラー表示を有効にする
@@ -150,13 +143,6 @@ delds () {
         printf "> Complete!\n"
     fi
 }
-
-
-##############################
-# 他の設定ファイルを読み込む
-
-if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc" ]; then source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"; fi
-if [ -f "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc" ]; then source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"; fi
 
 
 ##############################
