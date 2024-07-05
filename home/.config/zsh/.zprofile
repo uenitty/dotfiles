@@ -16,5 +16,8 @@ if [ -f "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc" ]; then
   source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 fi
 
-# Add Visual Studio Code (code)
+# Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Docker Desktop
+export PATH="$PATH:$HOME/.docker/bin"
