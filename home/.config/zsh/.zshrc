@@ -146,6 +146,13 @@ delds () {
 
 
 ##############################
+# mise
+if type mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
+
+
+##############################
 # 自動zcompile[http://blog.n-z.jp/blog/2013-12-10-auto-zshrc-recompile.html]
 if [ ! -f $ZDOTDIR/.zshrc.zwc -o $ZDOTDIR/.zshrc -nt $ZDOTDIR/.zshrc.zwc ]; then
    zcompile $ZDOTDIR/.zshrc

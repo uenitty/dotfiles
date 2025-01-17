@@ -3,9 +3,9 @@ if type /opt/homebrew/bin/brew >/dev/null 2>&1; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# asdf
-if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
-  source "$(brew --prefix asdf)/libexec/asdf.sh"
+# mise
+if type mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh --shims)"
 fi
 
 # google-cloud-sdk
