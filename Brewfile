@@ -1,4 +1,3 @@
-tap "homebrew/cask-versions"
 brew "git"
 #brew "go"
 #brew "jq"
