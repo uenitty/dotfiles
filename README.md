@@ -21,5 +21,11 @@
       git -C ~/Development/dotfiles remote set-url origin git@github.com:uenitty/dotfiles.git
       ```
 1. `./Brewfile` の中身を調整する（ `#` でコメントアウト）
+    - ```sh
+      vim ~/Development/dotfiles/Brewfile
+      ```
 1. `brew bundle` を実行する（[Homebrew/homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)）
+    - ```sh
+      brew bundle --file=~/Development/dotfiles/Brewfile
+      ```
 1. iTermのProfilesで `./term_profiles` ディレクトリ配下のプリセットをimportする
