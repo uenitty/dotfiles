@@ -46,4 +46,4 @@ mas "Keepa - Price Tracker", id: 1533805339
 mas "Kindle", id: 302584613
 mas "LINE", id: 539883307
 mas "Slack", id: 803453959
-mas "Twitter", id: 1482454543
+#mas "Twitter", id: 1482454543
