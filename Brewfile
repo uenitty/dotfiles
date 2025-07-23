@@ -44,6 +44,6 @@ cask "zoom"
 mas "AdGuard for Safari", id: 1440147259
 mas "Keepa - Price Tracker", id: 1533805339
 mas "Kindle", id: 302584613
-mas "LINE", id: 539883307
+#mas "LINE", id: 539883307
 mas "Slack", id: 803453959
 #mas "Twitter", id: 1482454543
