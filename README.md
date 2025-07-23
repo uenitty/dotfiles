@@ -18,7 +18,7 @@
       ```
 1. ssh接続に切り替える
     - ```sh
-      git remote set-url origin git@github.com:uenitty/dotfiles.git
+      git -C ~/Development/dotfiles remote set-url origin git@github.com:uenitty/dotfiles.git
       ```
 1. `./Brewfile` の中身を調整する（ `#` でコメントアウト）
 1. `brew bundle` を実行する（[Homebrew/homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)）
