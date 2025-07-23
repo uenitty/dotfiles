@@ -39,7 +39,7 @@ cask "sf-symbols"
 #cask "switchhosts"
 cask "teamviewer"
 cask "visual-studio-code"
-cask "vlc"
+#cask "vlc"
 cask "zoom"
 mas "AdGuard for Safari", id: 1440147259
 mas "Keepa - Price Tracker", id: 1533805339
