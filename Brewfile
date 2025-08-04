@@ -1,4 +1,3 @@
-#brew "cloudflared"
 #brew "gh"
 brew "git"
 #brew "go"
