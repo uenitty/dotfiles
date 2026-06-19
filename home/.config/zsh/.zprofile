@@ -4,9 +4,9 @@ if type /opt/homebrew/bin/brew >/dev/null 2>&1; then
 fi
 
 # mise
-if type mise >/dev/null 2>&1; then
-  eval "$(mise activate zsh --shims)"
-fi
+# if type mise >/dev/null 2>&1; then
+#   eval "$(mise activate zsh --shims)"
+# fi
 
 # google-cloud-sdk
 if [ -f "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc" ]; then
